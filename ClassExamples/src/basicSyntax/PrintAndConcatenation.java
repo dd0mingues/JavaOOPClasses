@@ -1,4 +1,4 @@
-package basicRules;
+package basicSyntax;
 
 public class PrintAndConcatenation {
 
