@@ -1,8 +1,8 @@
-package week1;
+package week3;
 
 import java.util.Scanner;
 
-public class Name {
+public class Exercice1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
