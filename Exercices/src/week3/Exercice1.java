@@ -44,16 +44,18 @@ public class Exercice1 {
 		System.out.println("Give me a whole number!");
 		numberInt = keyboard.nextInt();
 		
-		System.out.println("Would you like to add, divide or multiply these two numbers  by " + numberInt + "? (Type a, d or m and press ENTER)");
+		System.out.println("Would you like to add, divide or multiply these two numbers  by " 
+				+ numberInt + "? (Type a, d or m and press ENTER)");
 		
-		operatorChoice = keyboard.nextLine();
+		operatorChoice = keyboard.next();
 		
 		
 		//we only want to accept a, d or m as an input, this checks if the user did input any of these
 		//if not it will keep asking until the user inputs one of the predefined values
 		while (!(operatorChoice.equals("a") || operatorChoice.equals("d") || operatorChoice.equals("m"))) {
-			System.out.println("Please input either 'a', 'd' or 'm'," + "for addition, division and multiplication, respectively");
-			operatorChoice = keyboard.nextLine();
+			System.out.println("Please input either 'a', 'd' or 'm'," 
+					+ "for addition, division and multiplication, respectively");
+			operatorChoice = keyboard.next();
 		}
 		
 		
@@ -62,13 +64,11 @@ public class Exercice1 {
 			System.out.println(numberDecimal + " + " + numberInt +
 					" = " + (numberDecimal+numberInt));
 		}
-		
-		if (operatorChoice.equals("d")) {
+		else if (operatorChoice.equals("d")) {
 			System.out.println(numberDecimal + " / " + numberInt +
 					" = " + (numberDecimal/numberInt));
 		}
-		
-		if (operatorChoice.equals("m")) {
+		else if (operatorChoice.equals("m")) {
 			System.out.println(numberDecimal + " * " + numberInt +
 					" = " + (numberDecimal*numberInt));
 		}
