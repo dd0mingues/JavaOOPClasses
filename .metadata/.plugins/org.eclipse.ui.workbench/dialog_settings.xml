@@ -18,4 +18,8 @@
 			<item value="dark"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>

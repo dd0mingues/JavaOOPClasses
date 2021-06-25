@@ -44,7 +44,7 @@ public class Exercice1 {
 		System.out.println("Give me a whole number!");
 		numberInt = keyboard.nextInt();
 		
-		System.out.println("Would you like to add, divide or multiply these two numbers  by " 
+		System.out.println("Would you like to add, divide or multiply the decimal number by " 
 				+ numberInt + "? (Type a, d or m and press ENTER)");
 		
 		operatorChoice = keyboard.next();
