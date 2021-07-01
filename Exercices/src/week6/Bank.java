@@ -76,12 +76,12 @@ public class Bank {
 
 	public static String capitalize(String word) { // method to capitalize words. I used this on the substring exercise
 													// so i just copied it here.
-		String capitalizedWord = word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
+		String capitalizedWord = word.trim().substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
 		return capitalizedWord;
 	}
 
 	public static String firstLetter(String word) {// method to get the first letter of a string, in upper case
-		String fLetter = word.substring(0, 1).toUpperCase();
+		String fLetter = word.trim().substring(0, 1).toUpperCase();
 		return fLetter;
 	}
 
