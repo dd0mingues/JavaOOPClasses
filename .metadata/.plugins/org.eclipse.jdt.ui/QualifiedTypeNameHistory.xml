@@ -4,6 +4,9 @@
     <fullyQualifiedTypeName name="com.sun.crypto.provider.BlowfishCipher"/>
     <fullyQualifiedTypeName name="classesAndObjects.MyClass"/>
     <fullyQualifiedTypeName name="week6.BankAccount"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="staticExamples.Baby"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="week7.Banana"/>
+    <fullyQualifiedTypeName name="week8.FreeToyGift"/>
+    <fullyQualifiedTypeName name="week8.Jigsaw"/>
 </qualifiedTypeNameHistroy>

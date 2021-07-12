@@ -10,7 +10,7 @@ public class Bank {
 		account1.withdraw(120);
 
 		System.out.println("You have " + account1.getBal() + "€ in your account.");
-		
+
 		BankAccount account2 = BankAccount.createBankAccount();
 		account2.bankOperations();
 	}
@@ -30,8 +30,8 @@ class BankAccount {
 		this.fName = capitalize(fName);
 		this.lName = capitalize(lName);
 		this.balance = balance;
-		System.out.println("New account was created in the name of " + this.fName + " " + this.lName + " with a balance of "
-				+ balance + "€");
+		System.out.println("New account was created in the name of " + this.fName + " " + this.lName
+				+ " with a balance of " + balance + "€");
 	}
 
 	// Create an overload method in case the account is created without inputing an
@@ -71,9 +71,9 @@ class BankAccount {
 	public double getBal() {
 		return balance;
 	}
-	
+
 	private static Scanner k = new Scanner(System.in);
-	
+
 	public static BankAccount createBankAccount() {
 		System.out
 				.println("\nWelcome to the bank of Java. Let us set you up with an account. What is your first name?");
@@ -88,16 +88,16 @@ class BankAccount {
 		}
 		BankAccount inputAccount = new BankAccount(fName, lName, amount);
 		return inputAccount;
-		
+
 	}
-	
+
 	public void bankOperations() {
 		System.out.println("Would you like to withdraw or deposit?");
-		char answer2 = k.next().trim().toUpperCase().charAt(0);	
-		
-		while (!( answer2 == 'D' || answer2 == 'W' )) {
+		char answer2 = k.next().trim().toUpperCase().charAt(0);
+
+		while (!(answer2 == 'D' || answer2 == 'W')) {
 			System.out.println("Please input D for deposit or W for withdraw");
-			answer2 = k.next().charAt(0);
+			answer2 = k.next().trim().toUpperCase().charAt(0);
 		}
 		if (answer2 == 'D') {
 			System.out.println("How much would you like to deposit?");
@@ -119,11 +119,27 @@ class BankAccount {
 			}
 			withdraw(depositAmount);
 		}
+
+		System.out.println("Would you like to continue operations?(Y/N)");
+		char answer3 = k.next().trim().toUpperCase().charAt(0);
+		while (!(answer3 == 'Y' || answer3 == 'N')) {
+			System.out.println("Please input yes or no,");
+			answer2 = k.next().trim().toUpperCase().charAt(0);
+		}
+		if (answer3 == 'N') {
+			return;
+		} else if (answer3 == 'Y') {
+			bankOperations();
+		}
+
 		k.close();
 	}
-	
+
 	static String capitalize(String word) {
-		String capitalizedWord = word.trim().substring(0, 1).toUpperCase() + word.trim().substring(1).toLowerCase();
-		return capitalizedWord;
+		if (word.length() == 0) {
+			return "";
+		} else {
+			return word.trim().substring(0, 1).toUpperCase() + word.trim().substring(1).toLowerCase();
+		}
 	}
 }
