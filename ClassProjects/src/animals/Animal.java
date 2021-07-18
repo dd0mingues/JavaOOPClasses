@@ -37,7 +37,21 @@ public abstract class Animal {
 			this.color[i] = colorList[i];
 		}
 	}
-
+	
+	@Override
+	public String toString() {
+		return this.getClass().getSimpleName();
+	}
+	
+	public void eat() {
+		System.out.println("The " + this + " is eating.");
+	}
+	public void sleep() {
+		System.out.println("The " + this + " is sleeping.");
+	}
+	
+	//Abstract methods
+	abstract public void makeNoise(); //abstract classes must explicitly define makeNoise()
 }
 
 //enumerated type
@@ -84,6 +98,9 @@ abstract class Reptile extends Animal {
 	public Reptile() {
 		reptileCount += 1;
 	}
+	public void makeNoise() {
+		System.out.println("hiss");
+	}
 }
 
 //************ LEVEL 2 CLASS
@@ -108,6 +125,11 @@ abstract class Equidae extends Mammal {
 
 	public Equidae() {
 		EquidaeCount += 1;
+	}
+	
+	@Override
+	public void eat() {
+		System.out.println("This " + this + " is eating hay.");
 	}
 }
 
@@ -170,6 +192,10 @@ class Human extends Primate {
 	public Human() {
 		HumanCount += 1;
 	}
+	
+	public void makeNoise() {
+		System.out.println("AHHHHHHH!");
+	}
 }
 
 class Ape extends Primate {
@@ -181,6 +207,10 @@ class Ape extends Primate {
 
 	public Ape() {
 		ApeCount += 1;
+	}
+	
+	public void makeNoise() {
+		System.out.println("UHUH!");
 	}
 }
 
@@ -194,6 +224,10 @@ class Donkey extends Equidae {
 	public Donkey() {
 		DonkeyCount += 1;
 	}
+	
+	public void makeNoise() {
+		System.out.println("IH HOOOOO!");
+	}
 }
 
 class Horse extends Equidae {
@@ -205,6 +239,9 @@ class Horse extends Equidae {
 
 	public Horse() {
 		HorseCount += 1;
+	}
+	public void makeNoise() {
+		System.out.println("HIHIHI BRHH!");
 	}
 }
 
@@ -218,6 +255,9 @@ class Falcon extends BirdofPrey {
 	public Falcon() {
 		FalconCount += 1;
 	}
+	public void makeNoise() {
+		System.out.println("KAK KAK KAK!");
+	}
 }
 
 class Hawk extends BirdofPrey {
@@ -229,6 +269,9 @@ class Hawk extends BirdofPrey {
 
 	public Hawk() {
 		HawkCount += 1;
+	}
+	public void makeNoise() {
+		System.out.println("EEEEEEE!");
 	}
 }
 
@@ -242,6 +285,9 @@ class Duck extends Waterfowl {
 	public Duck() {
 		DuckCount += 1;
 	}
+	public void makeNoise() {
+		System.out.println("Quack quack!");
+	}
 }
 
 class Swan extends Waterfowl {
@@ -253,6 +299,9 @@ class Swan extends Waterfowl {
 
 	public Swan() {
 		SwanCount += 1;
+	}
+	public void makeNoise() {
+		System.out.println("oh-OH!");
 	}
 }
 
@@ -266,6 +315,9 @@ class Gecko extends Lizard {
 	public Gecko() {
 		GeckoCount += 1;
 	}
+	public void makeNoise() {
+		System.out.println("ecko ecko");
+	}
 }
 
 class KomodoDragon extends Lizard {
@@ -274,7 +326,6 @@ class KomodoDragon extends Lizard {
 	public static int getKomodoDragonCount() {
 		return KomodoDragonCount;
 	}
-
 	public KomodoDragon() {
 		KomodoDragonCount += 1;
 	}
@@ -319,6 +370,7 @@ class Pegasus extends Horse {
 
 class Unicorn extends Horse {
 	private static int UnicornCount;
+	int HornLength;
 
 	public static int getUnicornCount() {
 		return UnicornCount;
@@ -326,5 +378,9 @@ class Unicorn extends Horse {
 
 	public Unicorn() {
 		UnicornCount += 1;
+	}
+	@Override
+	public void eat() {
+		System.out.println("This " + this + " is eating star dust.");
 	}
 }

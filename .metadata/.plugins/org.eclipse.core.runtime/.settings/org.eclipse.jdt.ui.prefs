@@ -1,6 +1,6 @@
 Refactoring.savealleditors=true
 breadcrumb.org.eclipse.jdt.ui.JavaPerspective=true
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="interfaces.SimpleInterfaces2$Penguin"><rhs name\="interfaces.SimpleInterfaces2$Penguin"/></lhs><lhs name\="interfaces.SimpleInterfaces2$Flyer"><rhs name\="interfaces.SimpleInterfaces2$Pigeon"/></lhs><lhs name\="interfaces.SimpleInterfaces2$Pigeon"><rhs name\="interfaces.SimpleInterfaces2$Pigeon"/></lhs></history>
 content_assist_number_of_computers=12
 eclipse.preferences.version=1
 org.eclipse.jdt.ui.formatterprofiles.version=21

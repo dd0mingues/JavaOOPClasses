@@ -1,6 +1,7 @@
 package week7;
 
 public class Fruits {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		Fruit genericFruit = new Fruit();

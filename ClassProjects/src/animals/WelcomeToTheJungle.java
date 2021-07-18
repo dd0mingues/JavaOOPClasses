@@ -2,6 +2,7 @@ package animals;
 
 public class WelcomeToTheJungle {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Animal animal1 = new Swan();
 		animal1.sex = AnimalSex.MALE;
@@ -29,7 +30,26 @@ public class WelcomeToTheJungle {
 		System.out.println("There are " + Animal.getAnimalCount() + " animals, of witch " + Mammal.getMammalCount()
 				+ " are mammals, " + Bird.getBirdCount() + " are birds, and " + Reptile.getReptileCount()
 				+ " are reptiles.");
-
+		
+		Mammal[] grpMammals = new Mammal[] {
+				new Ape(),
+				new Human(),
+				new Horse(),
+				new Pegasus(),
+				new Donkey(),
+				new Unicorn()
+		};
+		
+		((Unicorn) grpMammals[5]).HornLength = 30;
+		
+		for(Mammal mammal : grpMammals) {
+			System.out.println("");
+			if(mammal.getClass().getSimpleName().equals("Unicorn")) {
+				System.out.println("Found a Unicorn with horn length of " + ((Unicorn)mammal).HornLength);
+			}
+			mammal.eat();
+			mammal.sleep();
+		}
 	}
 
 }
