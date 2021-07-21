@@ -38,7 +38,8 @@ public class MakeVehiacles1 {
 		for(Vehiacle vehiacle : vehiacles) {
 			System.out.println(vehiacle);
 		}
-
+		
+		car1.setLeftIndicator(true);
 	}
 
 }

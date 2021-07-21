@@ -26,7 +26,6 @@
     <fullyQualifiedTypeName name="java.lang.FdLibm.Pow"/>
     <fullyQualifiedTypeName name="inheratanceExercice.Powered"/>
     <fullyQualifiedTypeName name="inheratanceExercice.Unpowered"/>
-    <fullyQualifiedTypeName name="inheratanceExercice.Car"/>
     <fullyQualifiedTypeName name="java.lang.Process"/>
     <fullyQualifiedTypeName name="inheratanceExercice.Jet"/>
     <fullyQualifiedTypeName name="week9.Car"/>
@@ -38,4 +37,8 @@
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="inheratanceExercice.Car"/>
+    <fullyQualifiedTypeName name="inheratanceExercice.OperateVehiacle"/>
+    <fullyQualifiedTypeName name="animals.Animal"/>
+    <fullyQualifiedTypeName name="animals.Ape"/>
 </qualifiedTypeNameHistroy>

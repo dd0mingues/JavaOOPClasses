@@ -42,9 +42,11 @@ public abstract class Vehiacle {
 
 //*******************LVL2*******************//
 
-abstract class LandVehiacle extends Vehiacle {
+abstract class LandVehiacle extends Vehiacle implements OperateVehiacle {
 	private static int landVehiacleCount;
 	public Color color;
+	private boolean leftIndicatorOn;
+	private boolean rightIndicatorOn;
 
 	public LandVehiacle() {
 		landVehiacleCount += 1;
@@ -53,6 +55,23 @@ abstract class LandVehiacle extends Vehiacle {
 	public static int getCount() {
 		return landVehiacleCount;
 	}
+
+	public boolean getLeftIndicator() {
+		return leftIndicatorOn;
+	}
+
+	public boolean getRightIndicator() {
+		return rightIndicatorOn;
+	}
+
+	public void setRightIndicator(boolean x) {
+		leftIndicatorOn = x;
+	}
+
+	public void setLeftIndicator(boolean x) {
+		rightIndicatorOn = x;
+	}
+
 }
 
 abstract class AirVehiacle extends Vehiacle {
@@ -81,7 +100,7 @@ class WaterVehiacle extends Vehiacle {
 
 //*******************LVL3*******************//
 
-class FourWheels extends LandVehiacle {
+abstract class FourWheels extends LandVehiacle {
 	private static int fourWheelsCount;
 
 	public FourWheels(Color color) {
@@ -93,7 +112,7 @@ class FourWheels extends LandVehiacle {
 	}
 }
 
-class TwoWheels extends LandVehiacle {
+abstract class TwoWheels extends LandVehiacle {
 	private static int twoWheelsCount;
 
 	public TwoWheels() {
@@ -143,6 +162,41 @@ class Car extends FourWheels {
 	public static int getCount() {
 		return carCount;
 	}
+
+	@Override
+	public void moveFoward(int speed) {
+
+	}
+
+	@Override
+	public void moveBackward(int speed) {
+
+	}
+
+	@Override
+	public void accelerate(int metersPerSecond) {
+
+	}
+
+	@Override
+	public void turnRight() {
+		this.setRightIndicator(false);
+	}
+
+	@Override
+	public void turnLeft() {
+		this.setLeftIndicator(false);
+	}
+
+	@Override
+	public void stop(boolean breakHard) {
+
+	}
+
+	@Override
+	public void park() {
+
+	}
 }
 
 class Motorcycle extends TwoWheels {
@@ -153,9 +207,44 @@ class Motorcycle extends TwoWheels {
 		System.out.println(
 				"A new Motorcycle has been created, there are now " + MotorcycleCount + " Motorcycles in the system.");
 	}
-	
+
 	public static int getCount() {
 		return MotorcycleCount;
+	}
+
+	@Override
+	public void moveFoward(int speed) {
+
+	}
+
+	@Override
+	public void moveBackward(int speed) {
+
+	}
+
+	@Override
+	public void accelerate(int metersPerSecond) {
+
+	}
+
+	@Override
+	public void turnRight() {
+		this.setRightIndicator(false);
+	}
+
+	@Override
+	public void turnLeft() {
+		this.setLeftIndicator(false);
+	}
+
+	@Override
+	public void stop(boolean breakHard) {
+
+	}
+
+	@Override
+	public void park() {
+
 	}
 }
 
@@ -169,6 +258,41 @@ final class Bicycle extends TwoWheels {
 
 	public static int getCount() {
 		return bicyleCount;
+	}
+
+	@Override
+	public void moveFoward(int speed) {
+
+	}
+
+	@Override
+	public void moveBackward(int speed) {
+
+	}
+
+	@Override
+	public void accelerate(int metersPerSecond) {
+
+	}
+
+	@Override
+	public void turnRight() {
+		this.setRightIndicator(false);
+	}
+
+	@Override
+	public void turnLeft() {
+		this.setLeftIndicator(false);
+	}
+
+	@Override
+	public void stop(boolean breakHard) {
+
+	}
+
+	@Override
+	public void park() {
+
 	}
 }
 

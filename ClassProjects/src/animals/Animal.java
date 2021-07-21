@@ -198,38 +198,6 @@ class Human extends Primate {
 	}
 }
 
-class Ape extends Primate {
-	private static int ApeCount;
-
-	public static int getApeCount() {
-		return ApeCount;
-	}
-
-	public Ape() {
-		ApeCount += 1;
-	}
-	
-	public void makeNoise() {
-		System.out.println("UHUH!");
-	}
-}
-
-class Donkey extends Equidae {
-	private static int DonkeyCount;
-
-	public static int getDonkeyCount() {
-		return DonkeyCount;
-	}
-
-	public Donkey() {
-		DonkeyCount += 1;
-	}
-	
-	public void makeNoise() {
-		System.out.println("IH HOOOOO!");
-	}
-}
-
 class Horse extends Equidae {
 	private static int HorseCount;
 
