@@ -6,15 +6,23 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
+			<item value="org.eclipse.equinox.p2.ui.sdk.installationDetails"/>
+			<item value="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard"/>
 			<item value="org.eclipse.ui.preferencePages.Views"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.ui.commands"/>
+			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.preferences"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
+			<item value="1"/>
 			<item value="2"/>
 		</list>
 		<list key="textArray">
+			<item value="installation de"/>
+			<item value="marketpl"/>
 			<item value="light"/>
 			<item value="dark"/>
 		</list>
@@ -22,5 +30,16 @@
 	<section name="NewWizardAction">
 	</section>
 	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.jdt.internal.ui.fatjarpackager.JarPackageWizard"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.jdt.ui.Java"/>
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="765"/>
+		<item key="DIALOG_Y_ORIGIN" value="89"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="738"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

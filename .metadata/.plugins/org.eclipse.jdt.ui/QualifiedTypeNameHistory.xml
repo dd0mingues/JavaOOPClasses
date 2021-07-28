@@ -33,7 +33,6 @@
     <fullyQualifiedTypeName name="inheratanceExercice.Motorcycle"/>
     <fullyQualifiedTypeName name="inheratanceExercice.Bicycle"/>
     <fullyQualifiedTypeName name="inheratanceExercice.Propeller"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -41,4 +40,8 @@
     <fullyQualifiedTypeName name="inheratanceExercice.OperateVehiacle"/>
     <fullyQualifiedTypeName name="animals.Animal"/>
     <fullyQualifiedTypeName name="animals.Ape"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xs.identity.Selector.Matcher"/>
+    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
