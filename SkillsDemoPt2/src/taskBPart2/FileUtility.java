@@ -13,7 +13,7 @@ public class FileUtility {
     // 'ReadAllTextInFile' checks to see if the directory and file exists.
     // You do not need create the directory as the 'WriteTextToFile' method will
     // create the directory if necessary.
-	public static String ReadAllTextInFile(String filename) {
+	public static String ReadAllTextInFile(String filename) { 
 		File directory = new File("c:\\TASKBPART2FILES");
 		File file;
 		if (filename.isEmpty() || filename == null) {
